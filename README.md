@@ -24,6 +24,16 @@ Running the unit tests
     python manage.py test
 
 The unit-test/code cycle
-* Run the unit tests in the terminal.
-* Make a minimal code change in the editor.
-* Repeat!
+* We write a test, and see it fail ("Red").
+* We cycle between code and tests until the test passes: "Green".
+* Then, we look for opportunities to refactor.
+* Repeat as required!
+
+![TDD Process as a Flow Chart](https://www.obeythetestinggoat.com/book/images/tdd-process-unit-tests-only-excalidraw.png)
+![Red, Green, Refactor](https://www.obeythetestinggoat.com/book/images/red-green-refactor-excalidraw.png)
+
+![Double Loop TDD](https://www.obeythetestinggoat.com/book/images/double-loop-tdd-simpler.png)
+
+## References
+
+* [Appendix Links](https://www.obeythetestinggoat.com/book/appendix_github_links.html)
