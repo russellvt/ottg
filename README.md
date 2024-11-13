@@ -11,3 +11,19 @@ environments (mostly Vim, Pyenv, and/or PyCharm).
 Because "I'm weird," you can see instructions for my general setup in
 the [SETUP](SETUP.md) file, here.
 
+
+## Django Useful Commands and TDD Cycle
+
+Running the Django dev server
+    python manage.py runserver
+
+Running the functional tests
+    python functional_tests.py
+
+Running the unit tests
+    python manage.py test
+
+The unit-test/code cycle
+* Run the unit tests in the terminal.
+* Make a minimal code change in the editor.
+* Repeat!
