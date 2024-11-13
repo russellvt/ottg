@@ -9,6 +9,7 @@ __pycache__/
 # Mercurial
 .hg/
 .hgignore
+.hgtags
 
 # Vim
 *.swp
