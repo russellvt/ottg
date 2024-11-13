@@ -41,3 +41,28 @@ Essentially:
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init --path)"
+
+The version of Python I used for this project is stored in in the usual
+`pyenv` location: [.python-version](.python-version)
+
+If you have sourced the `pyenv init --path` (as above), PyEnv will
+automatically attempt to use it when you change in to this directory.
+
+
+## Python Virtual Environment
+Instead of using `pyenv-virtualenv`, I'm using the typical Python `venv`
+module that is packaged with later versions of Python 3. The initial
+setup is fairly routine:
+
+    python3 -m venv venv-ottg-3.13.0
+    . ./venv-ottg-3.13.0/bin/activate
+    pip install pip setuptools wheel --upgrade
+
+You should also install everything in the `requirements.txt` file:
+
+    pip install -r requirements.txt
+
+For development, you will likely also want the `requirements-dev.txt' file:
+
+    pip install -r requirements-dev.txt
+
