@@ -10,14 +10,26 @@ class HomePageTest(TestCase):
         self.assertTemplateUsed(response, "home.html")
 
     def test_can_save_a_POST_request(self):
+        '''
+        TODO: Code smell: POST test is too long?
+        '''
+
         response = self.client.post("/", data={"item_text": "A new list item"})
+        new_item = Item.objects.first()
+        self.assertEqual(new_item.text, "A new list item")
+
         self.assertContains(response, "A new list item")
         self.assertTemplateUsed(response, "home.html")
+
+    def test_only_saves_items_when_necessary(self):
+        self.client.get("/")
+        self.assertEqual(Item.objects.count(), 0)
 
 
 class ItemModelTest(TestCase):
     def test_saving_and_retrieving_items(self):
-        '''Basic Django ORM / Integration Test
+        '''
+        Basic Django ORM / Integration Test
 
         Tutorial Reference:
           - https://docs.djangoproject.com/en/5/intro/tutorial01/
