@@ -17,11 +17,10 @@ the [SETUP](SETUP.md) file, here.
 Running the Django dev server
     python manage.py runserver
 
-Running the functional tests
-    python functional_tests.py
-
-Running the unit tests
-    python manage.py test
+Tests (All / Lists / Functional):
+  * python manage.py test
+  * python manage.py test lists
+  * python manage.py test functional_tests
 
 The unit-test/code cycle
 * We write a test, and see it fail ("Red").
@@ -48,3 +47,5 @@ Some things referenced in the TDD book, worth a further look.
 * [Security Engineering](https://www.cl.cam.ac.uk/archive/rja14/book.html)
 * [Code Smells](https://blog.codinghorror.com/code-smells/)
 * [MMMSS](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/)
+* [Selenium: Avoid Implicit Waits](https://www.selenium.dev/documentation/webdriver/waits/)
+* [False Positives in Tests](https://martinfowler.com/articles/nonDeterminism.html)
