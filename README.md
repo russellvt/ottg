@@ -38,6 +38,7 @@ The unit-test/code cycle
 Direct references that may later be useful.
 
 * [Appendix Links](https://www.obeythetestinggoat.com/book/appendix_github_links.html)
+* [Purist Unit tests](https://www.obeythetestinggoat.com/book/appendix_purist_unit_tests.html)
 
 ### Future Reading
 Some things referenced in the TDD book, worth a further look.
