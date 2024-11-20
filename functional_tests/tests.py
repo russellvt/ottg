@@ -18,6 +18,12 @@ class NewVisitorTest(unittest.TestCase):
         self.assertIn(row_text, [row.text for row in rows])
 
     def test_can_start_a_todo_list(self):
+        '''
+        TODO:
+         * Clean Up after FT runs
+         * Remove time.sleeps
+        '''
+
         # Edith has heard about a cool new online to-do app.
         # She goes to check out its homepage
         self.browser.get("http://localhost:8000")
