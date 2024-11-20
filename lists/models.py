@@ -12,7 +12,6 @@ class Item(models.Model):
     '''Item Table
 
     TODO:
-     * Display multiple items in the table
      * Support mode than one list!
     '''
     text = models.TextField(default="")
