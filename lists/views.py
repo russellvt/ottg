@@ -1,3 +1,13 @@
+'''
+List Views
+
+TODO:
+* Adjust model so that items are associated with different lists
+* Add unique URLs for each list
+* Add a URL for creating a new list via POST
+* Add URLs for adding a new item to an existing list via POST
+'''
+
 from django.shortcuts import redirect, render
 from lists.models import Item
 
