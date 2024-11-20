@@ -1,19 +1,17 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from lists.models import Item
 
 def home_page(request):
-    '''
+    '''Home Page View
+
     TODO:
-     * Don't save blank items for every request
+     * Pass existing list items to the template somehow
+     * Display multiple items in the table
+     * Support more than one list!
     '''
     if request.method == "POST":
-        item = Item()
-        item.text = request.POST["item_text"]
-        item.save()
+        Item.objects.create(text=request.POST["item_text"])
+        return redirect("/")
 
-    return render(
-        request,
-        "home.html",
-        {"new_item_text": request.POST.get("item_text", "")},
-    )
+    items = Item.objects.all()
+    return render(request, "home.html", {"items": items})
