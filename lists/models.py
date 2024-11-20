@@ -8,6 +8,10 @@ Ref:
 '''
 
 # Create your models here.
+class List(models.Model):
+    pass
+
+
 class Item(models.Model):
     '''Item Table
 
@@ -15,3 +19,6 @@ class Item(models.Model):
      * Support mode than one list!
     '''
     text = models.TextField(default="")
+    list = models.ForeignKey(List, default=None, on_delete=models.CASCADE)
+
+

@@ -2,13 +2,12 @@
 List Views
 
 TODO:
-* Adjust model so that items are associated with different lists
 * Add unique URLs for each list
 * Add URLs for adding a new item to an existing list via POST
 '''
 
 from django.shortcuts import redirect, render
-from lists.models import Item
+from lists.models import Item, List
 
 def home_page(request):
     '''Home Page View
@@ -22,7 +21,8 @@ def home_page(request):
 
 
 def new_list(request):
-    Item.objects.create(text=request.POST["item_text"])
+    nulist = List.objects.create()
+    Item.objects.create(text=request.POST["item_text"], list=nulist)
     return redirect("/lists/the-only-list-in-the-world/")
 
 
