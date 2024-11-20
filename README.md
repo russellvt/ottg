@@ -46,3 +46,5 @@ Some things referenced in the TDD book, worth a further look.
 * [Python Testing with PyTest](https://refactoring.com/)
 * [Refactoring](https://refactoring.com/)
 * [Security Engineering](https://www.cl.cam.ac.uk/archive/rja14/book.html)
+* [Code Smells](https://blog.codinghorror.com/code-smells/)
+* [MMMSS](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/)
