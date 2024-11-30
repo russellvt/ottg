@@ -43,6 +43,7 @@ Direct references that may later be useful.
 ### Future Reading
 Some things referenced in the TDD book, worth a further look.
 
+* [Django Tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/#creating-models)
 * [Python Testing with PyTest](https://refactoring.com/)
 * [Refactoring](https://refactoring.com/)
 * [Security Engineering](https://www.cl.cam.ac.uk/archive/rja14/book.html)
