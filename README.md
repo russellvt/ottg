@@ -53,3 +53,9 @@ Some things referenced in the TDD book, worth a further look.
 * [False Positives in Tests](https://martinfowler.com/articles/nonDeterminism.html)
 * [Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 * [Bootstrap Sass](https://www.freecodecamp.org/news/how-to-customize-bootstrap-with-sass/)
+
+Other Things we should cover (Chapter 8):
+
+* The {% static %} template tag, for more DRY and fewer hardcoded URLs
+* Client-side packaging tools, like npm and bower
+* Customising bootstrap with SASS
